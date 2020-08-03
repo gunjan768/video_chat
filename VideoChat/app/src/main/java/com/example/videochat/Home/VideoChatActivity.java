@@ -38,9 +38,9 @@ public class VideoChatActivity extends AppCompatActivity implements Session.Sess
     public static final String TAG = VideoChatActivity.class.getSimpleName();
 
     private Context mContext;
-    public static String API_KEY = "46871824";
-    public static String SESSION_ID = "2_MX40Njg3MTgyNH5-MTU5NjQ3NTY0ODc4NH5PVHdNcDFsZkNXdjBITzZmZW9IalFZdkd-fg";
-    public static String TOKEN = "T1==cGFydG5lcl9pZD00Njg3MTgyNCZzaWc9NmY3ODlhMTg2ZDE0Yzc0NTU0MDliMDYyMDIzMDJiMTgzYzY4Yjc4YzpzZXNzaW9uX2lkPTJfTVg0ME5qZzNNVGd5Tkg1LU1UVTVOalEzTlRZME9EYzROSDVQVkhkTmNERnNaa05YZGpCSVR6Wm1aVzlJYWxGWmRrZC1mZyZjcmVhdGVfdGltZT0xNTk2NDc1Njk2Jm5vbmNlPTAuNzE5NDI4MDE2MjcyMzY4NyZyb2xlPXB1Ymxpc2hlciZleHBpcmVfdGltZT0xNTk2NDk3Mjk0JmluaXRpYWxfbGF5b3V0X2NsYXNzX2xpc3Q9";
+    public static String API_KEY = "";
+    public static String SESSION_ID = "";
+    public static String TOKEN = "";
 
     public static final int RC_VIDEO_APP_PERMISSION = 124;
 
