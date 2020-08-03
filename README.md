@@ -1,2 +1,2 @@
 # video_chat
-A basic mobile video chat application using TokBox 
+A basic mobile video calling application using TokBox 
