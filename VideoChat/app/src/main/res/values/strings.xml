@@ -1,0 +1,20 @@
+<resources>
+
+    <string name="app_name">VideoChat</string>
+
+    <string name="submit">Submit</string>
+    <string name="code_sent">Code Sent</string>
+    <string name="continues">Continue</string>
+    <string name="_9835579014">9835579014</string>
+    <string name="write_you_code_here">Write you code here…</string>
+    <string name="phone_number">Phone Number :</string>
+    <string name="search_here">Search here...</string>
+    <string name="user_name">user name</string>
+    <string name="todo">TODO</string>
+    <string name="notifications">Notifications</string>
+    <string name="add_friend">Add Friend</string>
+    <string name="cancel_friend_request">Cancel Friend request</string>
+    <string name="accept_friend_request">Accept Friend Request</string>
+    <string name="delete_contact">Delete Contact</string>
+
+</resources>

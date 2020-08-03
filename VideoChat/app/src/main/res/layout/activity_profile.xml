@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home.ProfileActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/profile_image"
+            android:scaleType="centerCrop"
+            android:id="@+id/background_profile_view"
+            android:contentDescription="TODO" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/name_profile"
+            android:text="user_name"
+            android:textColor="@color/light_green"
+            android:textSize="20dp"
+            android:maxLines="2"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_centerInParent="true" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_friend"
+            android:textColor="@android:color/white"
+            android:padding="5dp"
+            android:textAllCaps="false"
+            android:text="@string/add_friend"
+            android:textAlignment="center"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:background="@color/light_green"
+            android:layout_marginTop="35dp"
+            android:layout_below="@id/name_profile" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/decline_friend_request"
+            android:textColor="@android:color/white"
+            android:padding="5dp"
+            android:textAllCaps="false"
+            android:text="@string/add_friend"
+            android:textAlignment="center"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:background="@color/light_green"
+            android:layout_marginTop="35dp"
+            android:layout_below="@id/add_friend"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
