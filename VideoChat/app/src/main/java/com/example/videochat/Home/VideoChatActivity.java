@@ -64,75 +64,75 @@ public class VideoChatActivity extends AppCompatActivity implements Session.Sess
         userId = Objects.requireNonNull(FirebaseAuth.getInstance().getCurrentUser()).getUid();
         closeVideoChatBtn = findViewById(R.id.close_video_chat_btn);
 
-//        closeVideoChatBtn.setOnClickListener(new View.OnClickListener()
-//        {
-//            @Override
-//            public void onClick(View view)
-//            {
-//                userRef = FirebaseDatabase.getInstance().getReference().child("Users");
-//
-//                userRef.addValueEventListener(new ValueEventListener()
-//                {
-//                    @Override
-//                    public void onDataChange(@NonNull DataSnapshot snapshot)
-//                    {
-//                        if(snapshot.child(userId).hasChild("ringing"))
-//                        {
-//                            userRef.child(userId).child("ringing").removeValue();
-//
-//                            if(publisher != null)
-//                            {
-//                                publisher.destroy();
-//                            }
-//
-//                            if(subscriber != null)
-//                            {
-//                                subscriber.destroy();
-//                            }
-//
-//                            startActivity(new Intent(mContext, RegisterActivity.class));
-//                            finish();
-//                        }
-//                        else if(snapshot.child(userId).hasChild("calling"))
-//                        {
-//                            userRef.child(userId).child("calling").removeValue();
-//
-//                            if(publisher != null)
-//                            {
-//                                publisher.destroy();
-//                            }
-//
-//                            if(subscriber != null)
-//                            {
-//                                subscriber.destroy();
-//                            }
-//
-//                            startActivity(new Intent(mContext, RegisterActivity.class));
-//                            finish();
-//                        }
-//                        else
-//                        {
-//                            if(publisher != null)
-//                            {
-//                                publisher.destroy();
-//                            }
-//
-//                            if(subscriber != null)
-//                            {
-//                                subscriber.destroy();
-//                            }
-//
-//                            startActivity(new Intent(mContext, RegisterActivity.class));
-//                        }
-//                    }
-//
-//                    @Override
-//                    public void onCancelled(@NonNull DatabaseError error) {
-//
-//                    }
-//                });
-//            }
-//        });
+       closeVideoChatBtn.setOnClickListener(new View.OnClickListener()
+       {
+           @Override
+           public void onClick(View view)
+           {
+               userRef = FirebaseDatabase.getInstance().getReference().child("Users");
+
+               userRef.addValueEventListener(new ValueEventListener()
+               {
+                   @Override
+                   public void onDataChange(@NonNull DataSnapshot snapshot)
+                   {
+                       if(snapshot.child(userId).hasChild("ringing"))
+                       {
+                           userRef.child(userId).child("ringing").removeValue();
+
+                           if(publisher != null)
+                           {
+                               publisher.destroy();
+                           }
+
+                           if(subscriber != null)
+                           {
+                               subscriber.destroy();
+                           }
+
+                           startActivity(new Intent(mContext, RegisterActivity.class));
+                           finish();
+                       }
+                       else if(snapshot.child(userId).hasChild("calling"))
+                       {
+                           userRef.child(userId).child("calling").removeValue();
+
+                           if(publisher != null)
+                           {
+                               publisher.destroy();
+                           }
+
+                           if(subscriber != null)
+                           {
+                               subscriber.destroy();
+                           }
+
+                           startActivity(new Intent(mContext, RegisterActivity.class));
+                           finish();
+                       }
+                       else
+                       {
+                           if(publisher != null)
+                           {
+                               publisher.destroy();
+                           }
+
+                           if(subscriber != null)
+                           {
+                               subscriber.destroy();
+                           }
+
+                           startActivity(new Intent(mContext, RegisterActivity.class));
+                       }
+                   }
+
+                   @Override
+                   public void onCancelled(@NonNull DatabaseError error) {
+
+                   }
+               });
+           }
+       });
 
         requestPermissions();
     }
